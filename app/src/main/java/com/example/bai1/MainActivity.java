@@ -42,15 +42,12 @@ public class MainActivity extends AppCompatActivity {
        viewPager.registerOnPageChangeCallback(new OnPageChangeCallback() {
            @Override
            public void onPageSelected(int position) {
-               switch (position){
+               switch (position) {
                    case 0:
                        bottomNavigationView.getMenu().findItem(R.id.menu_input).setChecked(true);
                        break;
                    case 1:
                        bottomNavigationView.getMenu().findItem(R.id.menu_calendar).setChecked(true);
-                       break;
-                   case 2:
-                       bottomNavigationView.getMenu().findItem(R.id.menu_add).setChecked(true);
                        break;
                }
            }
@@ -63,8 +60,6 @@ public class MainActivity extends AppCompatActivity {
                     viewPager.setCurrentItem(0);
                 } else if (itemId == R.id.menu_calendar) {
                     viewPager.setCurrentItem(1);
-                } else if (itemId == R.id.menu_add) {
-                    viewPager.setCurrentItem(2);
                 }
                 return true;
             }

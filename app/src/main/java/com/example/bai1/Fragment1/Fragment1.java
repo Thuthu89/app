@@ -82,10 +82,10 @@ public class Fragment1 extends Fragment {
         new TabLayoutMediator(tabLayout, viewPager2, (tab, position) -> {
             switch (position) {
                 case 0:
-                    tab.setText("Tiền Chi");
+                    tab.setText("Sách");
                     break;
                 case 1:
-                    tab.setText("Tiền thu");
+                    tab.setText("Truyện");
                     break;
             }
         }).attach();
